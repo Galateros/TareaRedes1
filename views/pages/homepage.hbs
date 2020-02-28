@@ -1,0 +1,23 @@
+<h1>Hello MVC</h1>
+<p>This is my first page</p>
+<h2>Our products</h2>
+<ul>
+    {{#each products}}
+    <li>
+        Nombre: {{name}} ($ {{price}})
+        <form action="/product/{{id}}">
+        <input type ="submit" value="About">
+    	</form>
+    	<form action="/del/{{id}}">
+        <input type ="submit" value="Delete">
+    	</form>
+    	<form action="/update/{{id}}">
+        <input type ="submit" value="Update">
+    	</form>
+    </li>
+    {{/each}}
+</ul>
+<form action="/add">
+        <input type ="submit" value="Insert">
+</form>
+	

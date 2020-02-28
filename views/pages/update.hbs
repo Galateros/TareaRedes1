@@ -1,0 +1,15 @@
+<h1>Hello MVC</h1>
+<p>This is my first page</p>
+<h2>Update Product products</h2>
+<ul>
+
+		<form action="/toUpdate" method="post">
+       <label for="name">Name</label>
+         <input type="text" name="name" id="name" placeholder="name" value = "{{name}}" required>
+        <label for="desc">Description</label>
+         <input type="text" name="description" id="description" placeholder="Description" value = "{{description}}"required>
+		<label for="price">Price</label>
+         <input type="number" name="price" id="price" placeholder="price" value = "{{price}}" required>
+         <input type ="submit" value="Update">
+        </form>
+</ul>
